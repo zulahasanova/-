@@ -1,0 +1,103 @@
+new Random().Next() - рандом
+
+num = int.Parse - перевод в другой тип данных. тип указываем в начале(num)
+int.TryParse(concole.readline()!, out a); пробуем перевести int.TryParse(concole.readline()! 1 в out a
+
+double - дробные числа
+int - целые числа
+char - символ
+string - строка
+bool - true/false
+&& - логическое и
+|| - логическое или
+
+1. функции: имеет идеентификатор(имя) (латинские буквы, цифры(не может стоять на 1 месте)
+2. имеет входные аргументы
+3. возвращает значение
+f(x) = x^2 + 1
+double (возвращаемый тип) f(double(тип аргумента) x(имя аргумента)
+
+тело метода:
+{
+double result = x * x + 1;
+return result(возвращаемое значение)
+}
+
+void не возвращает значение(без return)
+
+break; - чтобы найти только первый массив из двух одинаковых
+
+int[] array = new int[10]; //определили массив из 10 элементов
+FillArray(array); //заполнил массив
+PrintArray(array); //распечатал
+
+ 1вид - ничего не принимают, не возвращают
+ 2вид - что-то принимают, ничего не возвращают
+ 3вид - не принимают, что-то возвращают
+ 4вид - что-то принимают, что-то Возвращает 
+
+//1 вид 
+void Method1()
+{
+Console.WriteLine("автор ...");
+}
+//как вызывать
+Method1();
+
+//вид2
+void Method2(string msg)
+{
+    Console.WriteLine(msg);
+}
+//как вызвать
+Method2(msg: "текст сообщения");
+void Method21(string msg, int count)
+{
+    int i = 0;
+    while (i < count)
+    {
+    Console.WriteLine(msg);
+    i++;
+    }
+}
+Method21("текст", count: 4);
+
+//вид3
+int Method3()
+{
+    return DateTime.Now.Year;
+}
+int year = Method3();
+Console.WriteLine(year);  
+
+//вид4
+string Method4(int count, string text);
+{
+    int i = 0;
+    string result = String.Empty;
+
+    while (i < count)
+    {
+        redult = result + text;
+        i++;
+    }
+    return result;
+}
+string res = Method4(10, "z");
+Console.WriteLine(res);
+
+цикл for - собирает все в одном мест
+
+enum Arrow {up, down, right, left}; //перечисляемый тип данных(создаем свой тип данных)
+//Arrow - тип данных
+
+switch(n)   //набор if -ов, перебрасывание от одного значения к другому с помощью кейсов(case)
+
+default: - //else Console.Write($"Введено неправильное значение"); (в switch)
+в switch не может быть переменной
+
+//Math.Pow - возведение в степень
+//Math.Sqrt - извлечение корня
+
+//надо знать: библиотека Linq, массивы, функции  (уровень мидл)
+//Math.Round
